@@ -10,13 +10,15 @@ const routes: Array<RouteRecordRaw> = [
     path: prefix,
     name: 'Home',
     component: Home,
+    redirect: '/ref',
     children: [
       {
-        path: '/:child',
-        component: function () {
-          console.log('location---->>%o', location);
-          return import(`@/views/components/${location.hash.split('/')[1]}.tsx`);
-        },
+        path: '/ref',
+        component: import(`@/views/components/ref.tsx`),
+      },
+      {
+        path: '/reactive',
+        component: import(`@/views/components/reactive.tsx`),
       },
     ],
   },

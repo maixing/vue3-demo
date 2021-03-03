@@ -11,17 +11,13 @@ const Slider = defineComponent({
         <section class="header">Vue3</section>
         <section class="menu">
           <Menu theme={'dark'} mode={'inline'}>
-            <Menu.SubMenu title={'测试'}>
-              <Menu.Item>{'子菜单'}</Menu.Item>
-            </Menu.SubMenu>
-            <Menu.SubMenu title={'测试'}>
-              <Menu.Item>{'子菜单'}</Menu.Item>
-            </Menu.SubMenu>
-            <Menu.SubMenu title={'测试'}>
-              <Menu.Item>{'子菜单'}</Menu.Item>
-            </Menu.SubMenu>
-            <Menu.SubMenu title={'测试'}>
-              <Menu.Item>{'子菜单'}</Menu.Item>
+            <Menu.SubMenu title={'vue3测试'}>
+              <Menu.Item>
+                <router-link to="/ref">ref</router-link>
+              </Menu.Item>
+              <Menu.Item>
+                <router-link to="/reactive">reactive</router-link>
+              </Menu.Item>
             </Menu.SubMenu>
           </Menu>
         </section>

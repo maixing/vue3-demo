@@ -23,7 +23,7 @@ const Reactive = defineComponent({
           <Col span={6}>reactive测试</Col>
           <Col span={9}>{JSON.stringify(reactiveState)}</Col>
           <Col span={9}>
-            <Button onClick={onChange}></Button>
+            <Button onClick={onChange}>更改</Button>
           </Col>
         </Row>
         <Row>
@@ -31,7 +31,7 @@ const Reactive = defineComponent({
           <Col span={9}>{JSON.stringify(shallowState)}</Col>
           <Col span={9}>
             {' '}
-            <Button onClick={onShallowChange}></Button>
+            <Button onClick={onShallowChange}>更改</Button>
           </Col>
         </Row>
       </div>
