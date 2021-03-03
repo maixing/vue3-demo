@@ -20,8 +20,9 @@ const refHooks = () => {
   });
   const onAddShallowCount = () => {
     shallowCount.value.num++;
+    console.log('shallowCount---->>%o', shallowCount);
     //使用triggerRef，会主动更新视图，现在vue有triggerRef,没有triggerReactive
-    triggerRef(shallowCount);
+    // triggerRef(shallowCount);
   };
   const onDeleShallowCount = () => {
     shallowCount.value.num--;

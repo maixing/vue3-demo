@@ -23,6 +23,7 @@ const shallowHooks = () => {
   });
   const onShallowChange = () => {
     shallowState.sub.name = 789;
+    console.log('shallowState---->>%o', shallowState);
   };
   return {
     shallowState,
